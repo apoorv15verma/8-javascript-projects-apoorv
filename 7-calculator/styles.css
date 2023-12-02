@@ -1,0 +1,70 @@
+nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 10px;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 300px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#container {
+  text-align: center;
+}
+
+#display {
+  width: 90%;
+  height: 40px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.digits {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.mathbuttons {
+  background-color: #ff9900;
+  color: #fff;
+}
+
+#clearButton {
+  background-color: #ff3300;
+  color: #fff;
+}

@@ -1,0 +1,93 @@
+nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+
+:root {
+  --orange: #ffa500;
+}
+
+body{
+  width: 425px;
+  margin: 0px auto;
+margin-top: 2px;
+
+}
+
+.heading{
+  background-color: var(--orange);
+  border-radius: 1rem;
+  width: 80%;
+  margin-left: 2.5rem;
+}
+
+h1{
+  text-align: center;
+  color:#fff;
+  font-size: 3.3rem;
+}
+
+
+#addtodo{
+ 
+  background: var(--orange);
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  border-radius: .5rem;
+  vertical-align: middle;
+  font-size: 30px;
+border: .2rem solid var(--orange);
+cursor: pointer;
+
+}
+
+#addtodo:hover{
+  background: rgba(255, 165,0 , .2);
+  color: var(--orange);
+
+}
+
+#inputfield{
+  width: 360px;
+  height: 50px;
+  border: 3px solid var(--orange);
+font-size: 25px;
+vertical-align: middle;
+outline: none;
+color: var(--orange);
+border-radius: 1rem;
+}
+
+
+
+
+
+.to-dos{
+  margin-top: 25px;
+border: 3px solid var(--orange) ;
+min-height: 8rem;
+border-radius: 1rem;
+}
+.paragraph-styling{
+  margin: 1px;
+  cursor: pointer;
+  font-size: 25px;
+  color: var(--orange);
+
+}
+
+.container .suggest li{
+  color: rgb(124, 124, 124);
+  padding-top : 1rem;
+  text-align: center;
+}

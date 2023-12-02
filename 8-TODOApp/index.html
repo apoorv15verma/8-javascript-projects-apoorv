@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>to do list</title>
+  </head>
+
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+    </nav>
+    <div class="heading">
+      <h1>TO DO LIST</h1>
+    </div>
+
+    <div class="container">
+      <input type="text" id="inputfield" placeholder="Type here and click +" />
+      <button id="addtodo">+</button>
+      <div class="to-dos" id="todocontainer">
+        <ol></ol>
+      </div>
+      <div class="suggest">
+        <li>Single click on list item for not to do it.</li>
+        <li>Double click on list item for remove it.</li>
+      </div>
+    </div>
+    <script>
+      console.log(`hi`);
+      let addtodobutton = document.getElementById(`addtodo`);
+      let todocontainer = document.getElementById(`todocontainer`);
+      let inputfield = document.getElementById(`inputfield`);
+
+      addtodobutton.addEventListener(`click`, function () {
+        var paragraph = document.createElement(`li`); //create the paragraph
+        todocontainer.appendChild(paragraph); //put the paragraph in todocontainer
+        paragraph.innerText = inputfield.value; //innertext of paragraph comes from inputfield value
+        paragraph.classList.add(`paragraph-styling`); //add the css
+        inputfield.value = ''; //search bar empty after enter
+
+        paragraph.addEventListener(`click`, function () {
+          paragraph.style.textDecoration = `line-through`; //create a cut line on the text
+        });
+
+        paragraph.addEventListener(`dblclick`, function () {
+          todocontainer.removeChild(paragraph); //remove the paragraph from todocontainer
+        });
+      });
+    </script>
+  </body>
+</html>
